@@ -15,7 +15,9 @@ def links(name: str, ref: str):
             name,
             class_name="text-white transition delay-100 duration-500 ease-in-out hover:text-white hover:underline decoration-amber-500 hover:scale-110"
         ),
-        href=f"{ref}")
+        href=f"{ref}",
+        class_name="py-[0.5em]"
+    )
 
 
 def navbar():
@@ -68,6 +70,7 @@ def navbar():
                         links("Organization", "#organization"),
                     ),
                     justify="end",
+
                 ),
                 justify="between",
                 align_items="center",
@@ -135,7 +138,7 @@ def abautUs():
             rx.flex(
                 rx.heading(
                     "Di IT Com Memperlajari Apa Saja ?",
-                    class_name="text-xl md:text-4xl"
+                    class_name="text-xl md:text-4xl text-white dark:text-white"
                 ),
                 rx.grid(
                     rx.card(
@@ -143,15 +146,15 @@ def abautUs():
                             '/ui-ux.png',
                             class_name="h-[10dvh] md:h-[25dvh] justify-self-center"
                         ),
-                        class_name="h-[13dvh] w-full md:w-auto md:h-[30dvh] row-span-3 justify-self-center self-center mr-4 py-4 shadow-xl"
+                        class_name="h-[13dvh] w-full md:w-auto md:h-[30dvh] row-span-3 justify-self-center self-center mr-4 py-4 shadow-xl text-white dark:text-white"
                     ),
                     rx.heading(
                         "UI/UX",
-                        class_name="self-center col-span-2 text-[1em] md:text-[1.5em]",
+                        class_name="self-center col-span-2 text-[1em] md:text-[1.5em] text-white dark:text-white",
                     ),
                     rx.text(
                         "User Interface / User Experience atau sering di sebut UI / UX adalah Sebuah Proses membuat design visual dari sebuah produk digital yang dapat memberikan sebuah pengalaman pada Pengguna atau Usernya.",
-                        class_name="col-span-2 row-span-2 self-start text-justify text-[0.7em] md:text-[1em] md:pb-[5dvh]",
+                        class_name="col-span-2 row-span-2 self-start text-justify text-[0.7em] md:text-[1em] md:pb-[5dvh] text-white dark:text-white",
                     ),
 
                     rx.card(
@@ -163,11 +166,11 @@ def abautUs():
                     ),
                     rx.heading(
                         "HTML & CSS",
-                        class_name="self-center col-span-2 text-[1em] md:text-[1.5em]",
+                        class_name="self-center col-span-2 text-[1em] md:text-[1.5em] text-white dark:text-white",
                     ),
                     rx.text(
                         "HTML adalah bahasa markup yang digunakan untuk menyusun dan menampilkan konten dalam sebuah halaman web. Sedangkan CSS di gunakan utuk membaut tampilan web lebih berwarna dan juga lebih indah.",
-                        class_name="col-span-2 row-span-2 self-start text-justify text-[0.7em] md:text-[1em] md:pb-[5dvh]",
+                        class_name="col-span-2 row-span-2 self-start text-justify text-[0.7em] md:text-[1em] md:pb-[5dvh] text-white dark:text-white",
                     ),
 
                     rx.card(
@@ -175,15 +178,15 @@ def abautUs():
                             '/iot.png',
                             class_name="h-[10dvh] md:h-[25dvh] justify-self-center"
                         ),
-                        class_name="h-[13dvh] w-full md:w-auto md:h-[30dvh] row-span-3 justify-self-center self-center mr-4 py-4 shadow-xl"
+                        class_name="h-[13dvh] w-full md:w-auto md:h-[30dvh] row-span-3 justify-self-center self-center mr-4 py-4 shadow-xl text-white dark:text-white"
                     ),
                     rx.heading(
                         "Internet of Things",
-                        class_name="self-center col-span-2 text-[1em] md:text-[1.5em]",
+                        class_name="self-center col-span-2 text-[1em] md:text-[1.5em] text-white dark:text-white",
                     ),
                     rx.text(
                         "Internet of Things (IoT) adalah konsep yang memungkinkan benda-benda atau objek fisik (seperti sensor, perangkat, mesin, kendaraan, dan lain-lain) terhubung ke internet dan saling berkomunikasi serta bertukar data tanpa intervensi manusia.",
-                        class_name="col-span-2 row-span-2 self-start text-justify text-[0.7em] md:text-[1em] md:pb-[5dvh]",
+                        class_name="col-span-2 row-span-2 self-start text-justify text-[0.7em] md:text-[1em] md:pb-[5dvh] text-white dark:text-white",
                     ),
 
                     class_name="grid-cols-3 grid-flow-row gap-1 mx-[10dvw] md:my-[5dvh]"
@@ -206,7 +209,7 @@ def visiMisi():
                     rx.text(
                         "Visi",
                         font_family="Poppins",
-                        class_name="py-4 text-xl sm:text-2xl lg:text-3xl text-white"
+                        class_name="py-4 text-xl sm:text-2xl lg:text-3xl text-white dark:text-white"
                     ),
                     rx.box(
                         rx.text(
@@ -222,26 +225,26 @@ def visiMisi():
                     rx.text(
                         "Misi",
                         font_family="Poppins",
-                        class_name="py-4 text-xl sm:text-2xl lg:text-3xl text-white"
+                        class_name="py-4 text-xl sm:text-2xl lg:text-3xl text-white dark:text-white"
                     ),
                     rx.box(
                         rx.list.ordered(
                             rx.list.item(
                                 rx.text(
                                     "Menyelenggarakan pelatihan secara berkala untuk meningkatkan keterampilan anggota dalam berbagai bidang teknologi informasi.",
-                                    class_name="text-sm sm:text-base md:text-lg text-white"
+                                    class_name="text-sm sm:text-base md:text-lg text-white dark:text-white"
                                 )
                             ),
                             rx.list.item(
                                 rx.text(
                                     "Membentuk forum diskusi dan kelompok belajar di mana anggota dapat berbagi pengetahuan dan pengalaman dalam teknologi informasi.",
-                                    class_name="text-sm sm:text-base md:text-lg text-white"
+                                    class_name="text-sm sm:text-base md:text-lg text-white dark:text-white"
                                 )
                             ),
                             rx.list.item(
                                 rx.text(
                                     "Menyusun nawala bulanan yang berisi panduan teknologi, pembaruan komunitas, serta rekomendasi materi pembelajaran.",
-                                    class_name="text-sm sm:text-base md:text-lg text-white"
+                                    class_name="text-sm sm:text-base md:text-lg text-white dark:text-white"
                                 )
                             ),
                             class_name="px-4 py-2 text-center"
