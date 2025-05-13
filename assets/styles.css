@@ -1,0 +1,10 @@
+.bg-header {
+  background-image: url('/image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-header-2 {
+  background-image: url('/image2.jpg');
+  background-size: cover;
+  background-position: center;
+}
